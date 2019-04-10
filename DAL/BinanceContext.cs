@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace TodoApi.Models
+namespace Binance.Models
 {
-    public class TodoContext : DbContext
+    public class BinanceContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
@@ -13,6 +13,6 @@ namespace TodoApi.Models
         {
 
         }
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<TradeData> TradeDatas { get; set; }
     }
 }
